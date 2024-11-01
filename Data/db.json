@@ -1,0 +1,68 @@
+{
+  "products": [
+    {
+      "name": "Chocolate Cake",
+      "image": "/Images/heroImage.jpg",
+      "description": "Delicious chocolate cake made with Belgian chocolate.",
+      "ingredients": [
+        "Flour",
+        "Eggs",
+        "Cocoa",
+        "Sugar",
+        "Butter"
+      ],
+      "price": 15,
+      "availability": true,
+      "stock": 10,
+      "category": "Cake",
+      "id": "1"
+    },
+    {
+      "name": "Croissant",
+      "image": "/Images/croissant.jpg",
+      "description": "Flaky and buttery croissant.",
+      "ingredients": [
+        "Flour",
+        "Butter",
+        "Yeast",
+        "Milk",
+        "sugar"
+      ],
+      "price": 3,
+      "availability": true,
+      "stock": 20,
+      "category": "Pastry",
+      "id": "2"
+    },
+    {
+      "id": "efd3",
+      "name": "Chocolate Chip",
+      "image": "/Images/Chocolate Chip.jpg",
+      "description": "Classic, chewy cookies loaded with chocolate",
+      "ingredients": [
+        "Choclate Chip",
+        "Sugar",
+        "Brown Sugar",
+        "Eggs",
+        "Milk"
+      ],
+      "price": "5",
+      "availability": true,
+      "stock": "20",
+      "category": "Cookie"
+    },
+    {
+      "id": "6d36",
+      "name": "star schema",
+      "image": "/Images/heroImage.jpg",
+      "description": "smnda",
+      "ingredients": [
+        "sad"
+      ],
+      "price": "3",
+      "availability": true,
+      "stock": "23",
+      "category": "Cake"
+    }
+  ]
+}

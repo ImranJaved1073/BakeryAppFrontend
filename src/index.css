@@ -1,0 +1,887 @@
+/* Custom Navbar Styles */
+body{
+  background-color: #FFF8E8;
+}
+
+.navbar {
+  background-color: #4D3621;
+  /* Dark brown primary background */
+}
+
+.navbar .navbar-brand {
+  font-size: 1.8rem;
+  color: #F7EED3;
+  /* Cream text for the brand */
+}
+
+@media screen and (max-width: 447px) {
+  .navbar .navbar-brand {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 385px) {
+  .navbar .navbar-brand {
+    font-size: 1.2rem;
+  }
+}
+
+.navbar .navbar-nav .nav-item a {
+  font-size: 1.1rem;
+  margin-right: 5px;
+  color: #F7EED3;
+  /* Cream text for links */
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  border-radius: 4px;
+}
+
+.navbar .navbar-nav .nav-item a:hover {
+  background-color: #8A8B6F;
+  /* Dark olive green background on hover */
+  color: #F7EED3;
+  /* Cream text on hover */
+}
+
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar-toggler-icon {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar i {
+  margin-right: 0.6rem;
+  /* Space between icon and text */
+  color: #F7EED3;
+  /* Cream icon color */
+  font-size: 2rem;
+}
+
+.navbar #shopping-cart {
+  transition: transform 0.3s ease;
+}
+
+.navbar #shopping-cart:hover {
+  transform: scale(1.2);
+}
+
+.navbar .nav-item a.active {
+  font-family: Arial, Helvetica, sans-serif;
+  border-color: black;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-color: #8A8B6F;
+  /* Dark olive green background */
+  color: #F7EED3;
+  /* Cream text on active */
+}
+
+
+/* Hero Section */
+
+.home .hero-section {
+  background-image: url('../public/Images/heroImage.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 500px;
+  position: relative;
+  /* Required for the pseudo-element */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  /* Center horizontally */
+  align-items: center;
+  /* Center vertically */
+}
+
+.home .hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Dark overlay */
+  z-index: 1;
+}
+
+.home .hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 20px;
+  text-align: center;
+}
+
+.home .hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #F7EED3;
+  /* Cream text for the title */
+}
+
+.home .hero-subtitle {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  color: #EDE6D1;
+  /* Light cream text for the subtitle */
+}
+
+.home .btn-primary {
+  background-color: #8A8B6F;
+  /* Dark olive green button background */
+  border: #8A8B6F;
+  /* Dark olive green button border */
+  color: #F7EED3;
+  /* Cream text on the button */
+}
+
+.home .btn-primary:hover {
+  background-color: #4D3621;
+  /* Dark brown background on hover */
+  border: #8A8B6F;
+  /* Keep dark olive green border on hover */
+  color: #F7EED3;
+  /* Cream text on hover */
+}
+
+
+
+/* About Section */
+
+.about-page h1 {
+  font-weight: bold;
+  background-color: #F7EED3;
+  /* Light cream background */
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #4D3621;
+  /* Dark brown text color */
+  text-align: center;
+}
+
+.about-page p.lead {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: #6B695F;
+  /* Soft olive green text */
+}
+
+.about-page .btn-outline-primary {
+  border-color: #4D3621;
+  /* Dark brown border for buttons */
+  color: #4D3621;
+  /* Dark brown text for buttons */
+}
+
+.about-page .btn-outline-primary:hover {
+  background-color: #4D3621;
+  /* Dark brown background on hover */
+  color: #F7EED3;
+  /* Cream text on hover */
+}
+
+.about-page .specialties h2,
+.team-section h2 {
+  font-size: 2.5rem;
+  color: #4D3621;
+  /* Dark brown text for headings */
+  margin-bottom: 2rem;
+}
+
+.about-page .specialties img,
+.team-section img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.about-page .specialties img:hover,
+.team-section img:hover {
+  transform: scale(1.1);
+}
+
+.about-page .specialties h4,
+.team-section h5 {
+  font-size: 1.4rem;
+  color: #4D3621;
+  /* Dark brown text for subheadings */
+  margin-top: 0.5rem;
+}
+
+.about-page .specialties p,
+.team-section p {
+  color: #6B695F;
+  /* Soft olive green text */
+}
+
+.about-page .team-section {
+  background-color: #EDE6D1;
+  /* Light cream background for the team section */
+  padding: 50px 0;
+}
+
+
+
+/* Product List */
+
+.productList .search-bar {
+  padding: 8px 15px;
+  border: 2px solid #8A8B6F;
+  /* Dark olive green border */
+  border-radius: 50px;
+  width: 300px;
+  outline: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.productList .search-container {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+@media screen and (max-width: 615px) {
+  .productList .search-container {
+    display: flex;
+    justify-content: center;
+  }  
+}
+
+.productList .search-bar:focus {
+  border-color: #4D3621;
+  /* Dark brown border on focus */
+  box-shadow: 0 0 10px rgba(35, 122, 55, 0.5);
+  /* Soft olive green glow */
+}
+
+.productList .no-products-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  width: 90%;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.productList .no-products-container h2 {
+  font-size: 2.5rem;
+  color: #4D3621;
+  /* Dark brown text */
+  font-weight: bold;
+}
+
+.productList h4 {
+  font-size: 1.5rem;
+  margin: 10px 0 30px 0;
+  font-weight: bold;
+  color: #4D3621;
+  /* Dark brown text */
+}
+
+.productList .action-icons {
+  display: flex;
+  gap: 5px;
+}
+
+.productList .action-icons i {
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.productList .action-icons i:hover {
+  color: #8A8B6F;
+  /* Dark olive green hover */
+}
+
+.productList .action-icons .fa-trash:hover {
+  color: red;
+}
+
+.productList h1 {
+  font-weight: bold;
+  background-color: #F7EED3;
+  /* Light cream background */
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #4D3621;
+  /* Dark brown text */
+  text-align: center;
+}
+
+.productList .filter-buttons {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.productList .filter-buttons button {
+  background-color: #4D3621;
+  /* Dark brown background */
+  color: #F7EED3;
+  /* Cream text */
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  min-width: 100px;
+}
+
+.productList .filter-buttons button:hover {
+  background-color: #8A8B6F;
+  /* Dark olive green hover */
+  transform: scale(0.9);
+}
+
+.productList .card {
+  border-radius: 10px;
+  background-color: #EDE6D1;
+  /* Light cream background */
+}
+
+.productList .card-header {
+  font-weight: bold;
+  padding: 15px;
+  color: #4D3621;
+  /* Dark brown text */
+}
+
+.productList .card-body {
+  padding: 20px;
+}
+
+.productList .card-subtitle {
+  margin-bottom: 15px;
+  color: #6B695F;
+  /* Soft olive green text */
+}
+
+.productList .card:hover {
+  transform: scale(1.03);
+  transition: transform 0.2s ease-in-out;
+}
+
+.productList .addTopicBtn {
+  background-color: #4D3621;
+  /* Dark brown background */
+  color: #F7EED3;
+  /* Cream text */
+}
+
+.productList .addTopicBtn:hover {
+  background-color: #8A8B6F;
+  /* Dark olive green hover */
+}
+
+/*ProductList reusable component*/
+
+.product-list .mybtns .addToCartBtn {
+  margin-left: 5px;
+  background-color: #8A8B6F;
+  /* Dark olive green background */
+  color: #F7EED3;
+  /* Cream text */
+}
+
+.product-list .mybtns .addToCartBtn:hover {
+  background-color: #4D3621;
+  /* Dark brown hover */
+}
+
+@media screen and (max-width: 375px) {
+  .product-list .mybtns {
+    display: flex;
+    flex-direction: column;      
+  }
+  .product-list .mybtns .addToCartBtn {
+    margin-top: 5px; 
+    margin-left: 0px;
+  }  
+}
+
+
+/* Contact Page */
+
+.contact h1 {
+  font-weight: bold;
+  background-color: #F7EED3;
+  /* Light cream background */
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #4D3621;
+  /* Dark brown text */
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  color: #4D3621;
+  /* Dark brown text */
+  margin-bottom: 2rem;
+}
+
+.contact p {
+  margin-bottom: 15px;
+}
+
+.contact .info-item {
+  background-color: #EDE6D1;
+  /* Light cream background */
+  padding: 20px 0 30px 0;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact .info-item a {
+  color: #4D3621;
+  /* Dark brown text */
+  text-decoration: none;
+}
+
+.contact .info-item a:hover {
+  color: #8A8B6F;
+  /* Dark olive green on hover */
+}
+
+.contact .info-item i {
+  font-size: 20px;
+  color: #4D3621;
+  /* Dark brown icon color */
+  width: 56px;
+  height: 56px;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+  border: 2px dotted #4D3621;
+  /* Dark brown dotted border */
+}
+
+.contact .php-email-form {
+  background-color: #EDE6D1;
+  /* Light cream background */
+  height: 100%;
+  padding: 30px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 575px) {
+  .contact .php-email-form {
+    padding: 20px;
+  }
+}
+
+.contact .php-email-form input[type=text],
+.contact .php-email-form input[type=email],
+.contact .php-email-form textarea {
+  font-size: 14px;
+  padding: 10px 15px;
+  box-shadow: none;
+  border-radius: 5px;
+  color: black;
+  background-color: #F7EED3;
+  /* Light cream background for input fields */
+  border-color: #4D3621;
+  /* Dark brown border */
+}
+
+.contact .php-email-form input[type=text]:focus,
+.contact .php-email-form input[type=email]:focus,
+.contact .php-email-form textarea:focus {
+  border-color: #8A8B6F;
+  /* Dark olive green border on focus */
+}
+
+.contact .php-email-form input[type=text]::placeholder,
+.contact .php-email-form input[type=email]::placeholder,
+.contact .php-email-form textarea::placeholder {
+  color: #666;
+  /* Gray placeholder text */
+}
+
+.contact .php-email-form button[type=submit] {
+  color: white;
+  background: #4D3621;
+  /* Dark brown background */
+  border: 0;
+  padding: 10px 30px;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+.contact .php-email-form button[type=submit]:hover {
+  background: #8A8B6F;
+  /* Dark olive green on hover */
+}
+
+
+
+/* Footer */
+
+.footer {
+  background-color: #4D3621;
+  /* Dark brown background for the footer */
+  box-shadow: inset 0 10px 10px rgba(0, 0, 0, 0.1);
+  /* Inset shadow for footer */
+}
+
+.footer-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: #F7EED3;
+  /* Cream text for footer titles */
+}
+
+.footer-link {
+  color: #F7EED3;
+  /* Cream links */
+  text-decoration: none;
+  /* Remove underline */
+  transition: color 0.3s ease;
+  /* Transition for link color */
+}
+
+.footer-link:hover {
+  color: #EDE6D1;
+  /* Lighter cream on hover */
+  font-size: 15px;
+}
+
+.footer p {
+  color: #F7EED3;
+  /* Cream text */
+}
+
+.footer .list-unstyled {
+  padding-left: 0;
+  /* Remove default padding */
+}
+
+.footer p {
+  margin: 0.5rem 0;
+  /* Spacing for paragraphs */
+}
+
+.footer i {
+  margin-right: 0.5rem;
+  /* Space between icon and text */
+  color: #F7EED3;
+  /* Cream icon color */
+}
+
+@media (max-width: 767px) {
+  .footer {
+    text-align: center;
+    /* Center text on smaller screens */
+  }
+}
+
+
+
+/* Product Details */
+
+.ProductDetails h1 {
+  font-weight: bold;
+  background-color: #F7EED3;
+  /* Light cream background */
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #4D3621;
+  /* Dark brown text */
+  text-align: center;
+}
+
+.ProductDetails .product-details {
+  padding: 2rem;
+  background-color: #EDE6D1;
+  /* Light cream background for the product details */
+  border-radius: 10px;
+}
+
+.ProductDetails .product-title {
+  font-weight: bold;
+  color: #4D3621;
+  /* Dark brown text */
+}
+
+.ProductDetails .product-image {
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.ProductDetails .product-price {
+  font-size: 1.5rem;
+  color: #8A8B6F;
+  /* Dark olive green text for the price */
+}
+
+.ProductDetails .availability-status {
+  font-size: 1.2rem;
+  color: #4D3621;
+  /* Dark brown text */
+}
+
+.ProductDetails .stock-info {
+  font-size: 1rem;
+  color: #6B695F;
+  /* Soft olive green text for stock info */
+}
+
+.ProductDetails .add-to-cart-button {
+  background-color: #4D3621;
+  /* Dark brown button background */
+  width: 100%;
+  border-color: #8A8B6F;
+  /* Dark olive green border */
+  color: #F7EED3;
+  /* Cream text */
+}
+
+.ProductDetails .add-to-cart-button:hover {
+  background-color: #8A8B6F;
+  /* Dark olive green background on hover */
+}
+
+.ProductDetails .alert-info {
+  font-weight: bold;
+  color: #4D3621;
+  /* Dark brown text for alert messages */
+}
+
+
+/*Cart Page*/
+
+.Cart {
+  background-color: #FFF8E8;
+  /* Light cream background */
+  padding: 20px;
+}
+
+.Cart .cart-item img {
+  width: 100px; /* Reduce image size */
+  height: 100px;
+  margin-right: 20px; /* Remove the margin-right for small screens */
+}
+
+.Cart .cart-item {
+  background-color: #F7EED3;
+  /* Cream background for cart items */
+  transition: transform 0.2s;
+}
+
+.Cart .cart-item:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.Cart .cart-item-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #4D3621;
+  /* Dark brown text */
+}
+
+.Cart .cart-item-price,
+.Cart .cart-item-quantity,
+.Cart .cart-item-subtotal {
+  font-size: 1rem;
+  margin: 0;
+  color: #6B695F;
+  /* Soft olive green text */
+}
+
+.Cart .cart-item-price span,
+.Cart .cart-item-quantity span,
+.Cart .cart-item-subtotal span {
+  font-weight: bold;
+  color: #4D3621;
+  /* Dark brown text */
+}
+
+.Cart .remove-btn {
+  background-color: #C82333;
+  /* Dark red remove button */
+  color: white;
+  transition: background-color 0.2s;
+}
+
+.Cart .remove-btn:hover {
+  background-color: #A71D2A;
+  /* Darker red on hover */
+}
+
+.Cart h1 {
+  font-weight: bold;
+  background-color: #F7EED3;
+  /* Cream background for the heading */
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #4D3621;
+  /* Dark brown text */
+  text-align: center;
+}
+
+.Cart .total-price-container h4 {
+  margin: 0;
+  color: #8A8B6F;
+  /* Dark olive green text */
+  font-weight: bold;
+}
+
+.Cart .continueShoppingBtn {
+  color: white;
+  background-color: #4D3621;
+  /* Dark brown background */
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.Cart .continueShoppingBtn:hover {
+  background-color: #8A8B6F;
+  /* Dark olive green hover */
+}
+
+.Cart .empty-cart {
+  margin-top: 2rem;
+}
+
+.Cart .cart-items {
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 400px) {
+  .Cart .cart-item {
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center horizontally */
+    padding: 15px;
+  }
+
+  .Cart .cart-item img {
+    width: 100px; /* Reduce image size */
+    height: 100px;
+    margin-right: 0; /* Remove the margin-right for small screens */
+    margin-bottom: 10px; /* Add margin-bottom to create space */
+  }
+
+  .Cart .cart-item-title {
+    font-size: 1rem; /* Reduce font size */
+    text-align: center; /* Center text */
+  }
+
+  .Cart .cart-item-price,
+  .Cart .cart-item-quantity,
+  .Cart .cart-item-subtotal {
+    font-size: 0.9rem; /* Slightly reduce font size */
+    text-align: center; /* Center text */
+  }
+
+  .Cart .remove-btn {
+    font-size: 0.8rem; /* Smaller button text */
+    padding: 8px 10px; /* Adjust padding for smaller screens */
+    margin-top: 10px; /* Add margin to create space */
+  }
+
+  .Cart .total-price-container h4 {
+    font-size: 1rem; /* Adjust total price font size */
+  }
+
+  .Cart h1 {
+    font-size: 1.2rem; /* Adjust header size */
+  }
+}
+
+
+
+/*Add Proudct*/
+
+.AddProduct h1 {
+  font-weight: bold;
+  background-color: #F7EED3;
+  /* Light cream background */
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #4D3621;
+  /* Dark brown text */
+  text-align: center;
+}
+
+.AddProduct .container {
+  background-color: #EDE6D1;
+  /* Light cream container background */
+  border-radius: 8px;
+  padding: 50px 30px;
+  width: 700px;
+}
+
+.btn-success {
+  background-color: #4D3621;
+  /* Dark brown button background */
+  border-color: #4D3621;
+  /* Dark brown border */
+  color: #F7EED3;
+  /* Cream text */
+}
+
+.btn-success:hover {
+  background-color: #8A8B6F;
+  /* Dark olive green on hover */
+}
+
+.btn-outline-success {
+  color: #4D3621;
+  /* Dark brown text */
+  border-color: #4D3621;
+  /* Dark brown border */
+}
+
+.btn-outline-success:hover {
+  background-color: #8A8B6F;
+  /* Dark olive green on hover */
+  color: #F7EED3;
+  /* Cream text on hover */
+}
+
+.badge{
+  background-color: #8A8B6F;
+  /* Dark olive green background */
+}
+
+/*Update Product*/
+
+.UpdateProduct h1 {
+  font-weight: bold;
+  background-color: #F7EED3;
+  /* Light cream background */
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #4D3621;
+  /* Dark brown text */
+  text-align: center;
+}
+
+.UpdateProduct .container {
+  background-color: #EDE6D1;
+  /* Light cream container background */
+  border-radius: 8px;
+  padding: 50px 30px;
+  width: 700px;
+}
